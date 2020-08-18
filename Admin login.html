@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin login</title>
+    <link rel="stylesheet" href="Admin%20login.css">
+    <script type="text/javascript">
+            var password;
+            var correctpassword = "MyBank01";
+            password = prompt("Are You Admin?...Enter the Password");
+            if(password == correctpassword)
+                alert('Correct password. Press OK to continue');
+            else
+                {
+                    alert('Wrong password')
+                    window.location="Home page.html";
+                }
+            -->
+        </script>
+    </head>
+    <body>
+        <div class="loginBox" >
+        <img src="bank2.jpeg" height="150" width="150" class="user">
+            <form>
+            <p>User ID</p><input type="text" placeholder="Enter id" name="userid"><br/>
+            <p>Password</p><input type="password"name="pword" placeholder="Enter password"><br/>
+            <input type="submit"onclick="check(this.form)" value = "Log In">
+            <a href="#">Forget Password</a>
+        </form>
+        </div>
+        <script type="text/javascript">
+        function check(form)
+        {
+            if(form.userid.value == "admin" && form.pword.value == "cse326")
+            {
+                alert("Correct Password. Click OK to enter")
+            }
+            else
+            {
+                alert("Invalid user id or password. Try it again")
+            }
+        }
+        </script>
+    </body>
+</html>

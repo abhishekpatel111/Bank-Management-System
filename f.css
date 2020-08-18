@@ -1,0 +1,68 @@
+body
+{
+	width: auto;
+	height: 1920px;
+	margin: 0;
+	padding: 0;
+	background: url(bank.jpg);
+	background-size:cover;
+	background-position:top;
+	font-family: italic;
+}
+.loginbox
+{
+	width: 325px;
+	height: 350px;
+	background : #051019;
+	opacity:0.9;
+	color: #fff;
+	top: 55%;
+	left: 76%;
+	position: absolute;
+	transform: translate(-160%,-50%);
+	box-sizing: fill;
+	padding: 10px 15px;
+}
+h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+.loginbox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input
+{
+	width: 100%;
+	margin-bottom: 20px; 
+}
+.loginbox input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid black;
+    backgroud: transparent;
+    outline: none;
+    height: 30px;
+    color: solid blue;
+    font-size: 15px;
+}
+.loginbox p
+{
+	border: none;
+	outline: none;
+	height: 30px;
+	background: green;
+	color: #fff;
+	font-size: 15px;
+	border-radius:8px;
+}
+
+.loginbox a:hover
+{
+	color:#ffc107;
+}

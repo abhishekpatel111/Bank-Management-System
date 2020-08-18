@@ -1,0 +1,85 @@
+body
+{
+   margin : 0; 
+   padding: 0;
+   background-image: url(bank.jpg);
+   background-size : cover;
+   font-family: sans-serif;
+}
+.loginBox
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 330px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.4);//rgba(red , green , blue , aplpa) aplha lies btw 0.0 to 1.0//
+}
+.user
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+.loginBox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+.loginBox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"]
+{
+    border: none;
+    border-bottom: 2px solid cornsilk;
+    background: transparent;
+    outline: none;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+}
+.loginBox input[type="password"]
+{   
+    border: none;
+    border-bottom: 2px solid cornsilk;
+    background: transparent;
+    outline: none;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+}
+::placeholder
+{
+    color: white;
+    font-size: 6;
+    
+}
+.loginBox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    background: green;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.loginBox a
+{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}

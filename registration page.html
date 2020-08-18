@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Online Registration Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+function abc()
+{
+	var retVal=confirm("Are You Sure?");
+	if(retVal==true){
+		document.write("This Details Has Been Saved");
+		return true;
+	}
+	else{
+		document.write("This Details Will Be Reseted");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<marquee scrollamount="10"
+direction="up"
+behavior="scroll">
+<h2 style="color: silver"><b><i>We Were Responsible For Your Money...<b><i></h2>
+<img src="money.gif" height:"320" width="630">
+</marquee>
+<div class="loginbox">
+<img src="download.png"class="avatar">
+<h1 style="color: #fff">Sign Up Here</h1>
+<form>
+<p>First Name :</p>
+<input type="text" name="" placeholder="Enter Firstname"><br>
+<p>Middle Name :</p>
+<input type="text" name="" placeholder="Enter Middlename"><br>
+<p>Last Name :</p>
+<input type="text" name="" placeholder="Enter Lastname"><br>
+<p>E-Mail ID :</p>
+<input type="text" name="" placeholder="Enter ur Mail id Eg: abc@gmail.com"><br>
+<p>Nationality :</p>
+<input type="text" name="" placeholder="Enter ur Nationality Eg: Indian"><br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+ <input type="radio" name="gender" value="female"> Female<br>
+ <input type="radio" name="gender" value="other"> Other
+<p>Contact Number :</p>
+<input type="text" name="" placeholder="Enter ur Number Eg: xxxxxxxx"><br>
+<p>State :</p>
+<select name="dropdown">
+<option value="punjab">punjab</option><br>
+<option value="Andhra Pradesh">Andhra Pradesh</option></select><br><br>
+<p> Address :</p>
+<input type="text" name="" placeholder="Enter ur Address"><br>
+<p>District :</p>
+<input type="text" name="" placeholder="Enter the name of ur District"><br>
+<p>Pincode :</p>
+<input type="text" name="" placeholder="Enter ur pincode Eg:535001"><br>
+<p>Password :</p>
+<input type="password" name="" value><br>
+<p>Re-Enter Password :</p>
+<input type="password" name="" value><br>
+<input type="submit"onclick="abc()">
+</form>
+</div>
+</body>
+</html>

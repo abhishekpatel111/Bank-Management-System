@@ -1,0 +1,96 @@
+body
+{
+	width: 1920px;
+	height: 1080px;
+	margin: 0;
+	padding: 0;
+	background: url(bank.jpg);
+	background-size:cover;
+	background-position:top;
+	font-family: italic;
+}
+header
+{
+    background: black;
+    color: white;
+    padding: 2px 0px 4px 15px;
+    opacity: 0.7;
+}
+.loginbox
+{
+	width: 325px;
+	height: 550px;
+	background : #051019;
+	opacity:0.9;
+	color: #fff;
+	top: 75%;
+	left: 81%;
+	position: absolute;
+	transform: translate(-120%,-60%);
+	box-sizing: fill;
+	padding: 1px 150px;
+}
+.avatar
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+.loginbox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input
+{
+	width: 100%;
+	margin-bottom: 20px; 
+}
+.loginbox input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid black;
+    backgroud: transparent;
+    outline: none;
+    height: 40px;
+    color: solid blue;
+    font-size: 15px;
+}
+.loginbox p
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: green;
+	color: #fff;
+	font-size: 450px;
+	border-radius:800px;
+}
+.loginbox input[type="submit"]:hover
+{
+	cursor:auto;
+	background:#ffc107;
+	color: #fff;
+}
+.loginbox a
+{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.loginbox a:hover
+{
+	color:#ffc107;
+}

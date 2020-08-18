@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reservation form</title>
+    <style>
+        p
+        {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <center>
+        <p><font color="blue">Welcome To The Indian Railway</font></p>
+        <hr>
+    </center>
+    <p>Note:- </p>
+    <hr>
+    &nbsp;&nbsp;&nbsp;&nbsp;1) Maximum permissible passengers are 6 per requisition.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;2) One person can give one requisition form at a time.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;3) Forms not properly filled or in illegible forms shall not be entertained.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;4) Choice is subject to availability.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;5) <font color="red">*</font> is mandatory to fill.<br>
+    <hr>
+    <p><font color="blue">Train information</font></p>
+    <hr>
+<form>
+<center>
+<table>
+    <tr>
+        <td>
+            <strong>Train no & name:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="train_name"maxlength="20"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Date of journey:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Class:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Third AC</option>
+            <option>Second AC</option>
+            <option>First AC</option>
+            <option>Sleeper</option>
+            </select>
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Seat preference:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dropdown">
+            <option value="choose"selected>..Choose One..</option>
+            <option value="upper">Upper</option>
+            <option value="middle">Middle</option>
+            <option value="lower">Lower</option>
+            </select>
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Station from:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="station_from"maxlength="20"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>To:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="to"maxlength="20"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Boarding at:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="boarding"maxlength="30"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Reservation upto:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="reservation"maxlength="30"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Quota:-</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dropdown">
+            <option selected>General</option>
+            <option>Tatkal</option>
+            <option>Defence</option>
+            <option>Handicapped</option>
+            <option>Duty Pass</option>
+            </select>
+            <hr>
+        </td>
+    </tr>
+</table>
+</center>
+</form>
+    <p><font color="blue">Passengers information</font></p>
+    <hr>
+<form>
+<center>
+<table>
+    <tr style="color:black;background-color:cadetblue" class="main_body_text">
+        <td align="center"><strong>
+            S.no</strong>
+        </td>
+        <td align="center">
+            <strong>Name in block letters<br>
+            (not more than 20 letters)</strong><font color="red">*</font>
+        </td>
+        <td align="center"><strong>
+            Age</strong><font color="red">*</font>
+        </td>
+        <td align="center"><strong>
+            Gender(M/F)</strong><font color="red">*</font>
+        </td>
+        <td align="center"><strong>Meal<br>preference</strong>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            1.
+        </td>
+        <td>
+            <input type="text"name="name"maxlength="20"size="40">
+        </td>
+        <td>
+            <input type="text"name="age"maxlength="2"size="10">
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option >Male</option>
+            <option >Female</option>
+            </select>
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Veg.</option>
+            <option>Non veg.</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            2.
+        </td>
+        <td>
+            <input type="text"name="name"maxlength="20"size="40">
+        </td>
+        <td>
+            <input type="text"name="age"maxlength="2"size="10">
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Veg.</option>
+            <option>Non veg.</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            3.
+        </td>
+        <td>
+            <input type="text"name="name"maxlength="20"size="40">
+        </td>
+        <td>
+            <input type="text"name="age"maxlength="2"size="10">
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Veg.</option>
+            <option>Non veg.</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            4.
+        </td>
+        <td>
+            <input type="text"name="name"maxlength="20"size="40">
+        </td>
+        <td>
+            <input type="text"name="age"maxlength="2"size="10">
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Veg.</option>
+            <option>Non veg.</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            5.
+        </td>
+        <td>
+            <input type="text"name="name"maxlength="20"size="40">
+        </td>
+        <td>
+            <input type="text"name="age"maxlength="2"size="10">
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Veg.</option>
+            <option>Non veg.</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            6.
+        </td>
+        <td>
+            <input type="text"name="name"maxlength="20"size="40">
+        </td>
+        <td>
+            <input type="text"name="age"maxlength="2"size="10">
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+        </td>
+        <td>
+            <select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Veg.</option>
+            <option>Non veg.</option>
+            </select>
+        </td>
+    </tr>
+</table>
+    <hr>
+</center>
+</form>
+    <p><font color="blue">Residential Address</font></p>
+    <hr>
+<center>
+<table>
+<form>
+    <tr>
+        <td>
+            <strong>Address:-</strong><font color="red">*</font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea rows="5"cols="50"name="address"></textarea>
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Country:-</strong><font color="red">*</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option value="india">India</option>            </select>
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>State:-</strong><font color="red">*</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dropdown">
+            <option selected>..Choose One..</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chhattisgarh</option>
+            <option>New Delhi</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jammu & Kashmir</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option>
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <option>Uttarakhand</option>
+            <option>Uttar Pradesh</option>
+            <option>West Bengal</option>
+            </select>
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>City:-</strong><font color="red">*</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="city"maxlength="20"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Pin/Zip:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"name="pin"maxlength="6"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            <strong>Mobile:-</strong> <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91&nbsp;<input type="number"name="phone"maxlength="11"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            <strong>Email ID:-</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"name="phone"maxlength="30"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Phone(if any):-</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="phone"maxlength="11"size="20">
+            <hr>
+        </td>
+    </tr>
+    <tr>
+          <td>
+              <strong>Copy Residence to<br>
+              Work Address:-</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio"name="confirmation"value="yes">YES
+              <input type="radio"name="confirmation"value="no">NO
+              <hr>
+          </td>
+      </tr>
+</form>
+</table>
+    <script>
+        function submit_data()
+        {
+            return confirm("Are you sure to save this data");
+        }
+        function show()
+        {
+            return("Your data is saved");
+        }
+        function clear_data()
+        {
+            return confirm("Are you sure to clear the data");
+        }
+        
+    </script>
+    <a href="Home%20page.html"><input type="submit" value="Submit" onclick="return submit_data()"/></a>
+    <a href="reservation%20form.html"><input type="submit" value="Reset"onclick="return clear_data()"/></a>
+    <hr>
+</center>
+</body>
+</html>

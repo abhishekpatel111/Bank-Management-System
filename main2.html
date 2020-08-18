@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+.header {
+    border: 1px solid red;
+    padding: 15px;
+}
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+      border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+      position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+li {
+	float: left;
+    display: inline;
+     color: #666;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+* {box-sizing:border-box}
+.btn{
+border:none;
+color:white;
+padding:80px 160px;
+align="center";
+
+
+}
+.tranction {background-color: #4CAF50;} 
+.tranction:hover {background-color:  yellow;}
+.internet {background-color: #4CAF50;} 
+.internet:hover {background-color:  yellow;}
+
+.accnt {background-color: #4CAF50;} 
+.accnt:hover {background-color:  yellow;}
+
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+  <img src="logo.jpg" height="150" width="200" style="float: left";>
+	<h1 align="center">LENI DENI BANK</h1>
+<ul>
+<li><a href="main1.html">Home</a></li>
+<li><a href="FAQ.html">FAQs</a></li>
+  
+  <li><a href="about.html">About</a></li>
+   <li><a href="contact.html">Get in touch</a></li>
+  <li style="float:right"><a class="active" href="main1.html">log out</a></li>
+</ul>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div id="body"><button type="button" class="btn tranction"><a href="transaction.html">Transactions</a></button>
+<button type="button" class="btn internet"><a href="internet banking.html">Internet Banking</a></button>
+<button type="button" class="btn accnt"><a href="account information.html">Account Information</a></button>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+.header {
+    border: 1px solid red;
+    padding: 15px;
+}
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+.main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+      border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+      position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+li {
+	float: left;
+    display: inline;
+     color: #666;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+form{
+background-color:rgb(82,196,205);}
+
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+  <img src="logo.jpg" height="150" width="200" style="float: left";>
+	<h1 align="center">STUDENT BANK OF LPU</h1>
+<ul>
+<li><a href="internet banking.html">Back</a></li>
+</ul>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div id="body" align="center">
+<form method="post">
+<fieldset><legend align="center"><b>Pay Bills</b></legend>
+<p><b>Which bill you want to pay?<b></p><br>
+<b>Electricity bill </b><input type="radio" value="electric" name="bill"><br>
+<b>Mobile bill </b><input type="radio" value="mobile" name="bill"><br>
+<b>Water bill </b><input type="radio" value="water" name="bill"><br>
+<b>Gas bill </><input type="radio" value="gas" name="bill"><br>
+<b>Enter amount</b><input type="text" name="t1" placeholder="Enter amount" required><br><br>
+<button onclick="myfun()"> Pay Now</button>
+<script>
+function myfun() {
+alert("Your payment has been made");
+window.location.href="main2.html";
+}
+</script>
+</div>
+</body>
+</html>
